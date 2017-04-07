@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp">
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:id="@+id/graph">
+    </com.jjoe64.graphview.GraphView>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_marginTop="20dp" />
+
+    <CheckBox
+        android:id="@+id/checkbox_temp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Temperature"
+        android:onClick="onCheckBoxClicked"
+        />
+
+
+</LinearLayout>
